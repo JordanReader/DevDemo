@@ -28,7 +28,7 @@ namespace Magic_The_Gathering
 
         private void NextBtn_Click(object sender, RoutedEventArgs e)
         {
-            Debug.Print("Hello"); 
+            this.Title_lbl.Content = "Hello"; 
         }
     }
 }

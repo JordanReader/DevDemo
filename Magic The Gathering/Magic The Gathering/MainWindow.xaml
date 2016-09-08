@@ -8,7 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Button x:Name="NextBtn" Content="Next" Click="NextBtn_Click" HorizontalAlignment="Left" Margin="434,290,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="Label" Content="Label" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.666,0.654"/>
+        <Label x:Name="Title_lbl" Content="Label" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.666,0.654"/>
         <StackPanel Height="195" Margin="32,90,63.667,0" VerticalAlignment="Top" Orientation="Horizontal">
             <Image x:Name="image2" Height="64" VerticalAlignment="Top" Width="76" Source="Assets/arrow3.png"/>
             <Image x:Name="image1" Height="63" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.515,0.491" Source="Assets/arrow.jpg"/>
