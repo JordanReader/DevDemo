@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Magic_The_Gathering.Screens;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -28,7 +29,10 @@ namespace Magic_The_Gathering
 
         private void NextBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Title_lbl.Content = "Hello"; 
+            var handView = new Hand_View(); //create your new form.
+            handView.Show(); //show the new form.
+            this.Close(); //only if you want to close the current form.
+
         }
     }
 }

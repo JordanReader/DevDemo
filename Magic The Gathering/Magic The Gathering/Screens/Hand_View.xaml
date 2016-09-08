@@ -1,0 +1,13 @@
+﻿<Window x:Class="Magic_The_Gathering.Screens.Hand_View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Magic_The_Gathering.Screens"
+        mc:Ignorable="d"
+        Title="Hand_View" Height="337.653" Width="547.203">
+    <Grid>
+        <Label x:Name="Hand_lbl" Content="Hand" HorizontalAlignment="Left" Margin="251,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.109,1.615"/>
+
+    </Grid>
+</Window>
