@@ -1,0 +1,19 @@
+﻿<Window x:Class="Magic_The_Gathering.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Magic_The_Gathering"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="NextBtn" Content="Next" Click="NextBtn_Click" HorizontalAlignment="Left" Margin="434,290,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="Label" Content="Label" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.666,0.654"/>
+        <StackPanel Height="195" Margin="32,90,63.667,0" VerticalAlignment="Top" Orientation="Horizontal">
+            <Image x:Name="image2" Height="64" VerticalAlignment="Top" Width="76" Source="Assets/arrow3.png"/>
+            <Image x:Name="image1" Height="63" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.515,0.491" Source="Assets/arrow.jpg"/>
+            <Image x:Name="image" Height="100" VerticalAlignment="Top" Width="100" Source="Assets/arrow2.png"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
