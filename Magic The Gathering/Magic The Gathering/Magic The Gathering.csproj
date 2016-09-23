@@ -103,11 +103,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\arrow.jpg" />
+    <Resource Include="Assets\Guttersnipe.jpg" />
+    <Resource Include="Assets\Image %281%29.jpg" />
+    <Resource Include="Assets\Image %282%29.jpg" />
+    <Resource Include="Assets\Image %283%29.jpg" />
+    <Resource Include="Assets\Image %284%29.jpg" />
+    <Resource Include="Assets\Image.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\arrow2.png" />
-    <Resource Include="Assets\arrow3.png" />
+    <Resource Include="Assets\soringrimnemesis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\magic_the_gathering_playmat_by_jest84-d38538r.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,14 +28,96 @@ namespace Magic_The_Gathering
         public MainWindow()
         {
             InitializeComponent();
+            downloadCards();
         }
 
-        private void NextBtn_Click(object sender, RoutedEventArgs e)
+        private void downloadCards()
         {
-            var handView = new Hand_View(); //create your new form.
-            handView.Show(); //show the new form.
-            this.Close(); //only if you want to close the current form.
+            //https://api.magicthegathering.io/v1/cards
+            /*         using (var client = new HttpClient())
+                     {
+                         var responseString = client.GetStringAsync("https://api.magicthegathering.io/v1/cards");
+
+                     }*/
+
+            Task t = new Task(DownloadPageAsync);
+            t.Start();
+
 
         }
+
+        static async void DownloadPageAsync()
+        {
+            // ... Target page.
+            string page = "https://api.magicthegathering.io/v1/cards";
+
+            // ... Use HttpClient.
+            using (HttpClient client = new HttpClient())
+            using (HttpResponseMessage response = await client.GetAsync(page))
+            using (HttpContent content = response.Content)
+            {
+                // ... Read the string.
+                string result = await content.ReadAsStringAsync();
+
+                // ... Display the result.
+                if (result != null &&
+                result.Length >= 50)
+                {
+                    Console.WriteLine(result);
+                }
+            }
+        }
+
+
+        private void Guttersnipe_btn_Click(object sender, RoutedEventArgs e)
+        {
+            var handView = new Hand_View(); 
+            handView.Show(); 
+            this.Close();
+            
+        }
+
+        private void Sphinx_btn_Click (object sender, RoutedEventArgs e)
+        {
+            var handView = new Hand_View(); 
+            handView.Show(); 
+            this.Close(); 
+        }
+
+        private void Badger_btn_Click(object sender, RoutedEventArgs e)
+        {
+            var handView = new Hand_View(); 
+            handView.Show(); 
+            this.Close(); 
+        }
+
+        private void Island_btn_Click(object sender, RoutedEventArgs e)
+        {
+            var handView = new Hand_View(); 
+            handView.Show(); 
+            this.Close(); 
+        }
+
+        private void Mountain_btn_Click(object sender, RoutedEventArgs e)
+        {
+            var handView = new Hand_View(); 
+            handView.Show(); 
+            this.Close(); 
+        }
+
+        private void Negate_btn_Click(object sender, RoutedEventArgs e)
+        {
+            var handView = new Hand_View(); 
+            handView.Show(); 
+            this.Close(); 
+        }
+
+         private void Sorin_btn_Click(object sender, RoutedEventArgs e)
+        {
+            var handView = new Hand_View();
+            handView.Show(); 
+            this.Close(); 
+        }
+
     }
 }

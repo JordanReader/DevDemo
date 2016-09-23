@@ -5,15 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Magic_The_Gathering"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="438.812" Width="788.574">
     <Grid>
-        <Button x:Name="NextBtn" Content="Next" Click="NextBtn_Click" HorizontalAlignment="Left" Margin="434,290,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="Title_lbl" Content="Label" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.666,0.654"/>
-        <StackPanel Height="195" Margin="32,90,63.667,0" VerticalAlignment="Top" Orientation="Horizontal">
-            <Image x:Name="image2" Height="64" VerticalAlignment="Top" Width="76" Source="Assets/arrow3.png"/>
-            <Image x:Name="image1" Height="63" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.515,0.491" Source="Assets/arrow.jpg"/>
-            <Image x:Name="image" Height="100" VerticalAlignment="Top" Width="100" Source="Assets/arrow2.png"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="587" VerticalAlignment="Top" Width="1067" Source="Assets/magic_the_gathering_playmat_by_jest84-d38538r.jpg" Margin="-12,-29,-273,-148.667"/>
+
+        <Label x:Name="Title_lbl" Content="Overview" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.666,0.654"/>
+        <StackPanel Height="166" Margin="35,206,46,0" VerticalAlignment="Top" Orientation="Horizontal">
+            <Image x:Name="Guttersnipe_img" Width="100" Source="Assets/Guttersnipe.jpg"/>
+            <Image x:Name="Sphinx_img" Width="100" Source="Assets/Image (1).jpg"/>
+            <Image x:Name="Badger_img" Width="100" Source="Assets/Image (2).jpg"/>
+            <Image x:Name="Island_img" Width="100" Source="Assets/Image (3).jpg"/>
+            <Image x:Name="Mountain_img" Width="100" Source="Assets/Image (4).jpg"/>
+            <Image x:Name="Negate_img" Width="100" Source="Assets/Image.jpg"/>
+            <Image x:Name="Sorin_img" Width="100" Source="Assets/soringrimnemesis.jpg"/>
         </StackPanel>
+        <Button x:Name="Guttersnipe_btn" Content="More..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="48,372,0,0" Click="Guttersnipe_btn_Click" RenderTransformOrigin="0.121,0.537"/>
+        <Button x:Name="Sphinx_btn" Content="More..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Click="Sphinx_btn_Click" Margin="148,372,0,0"/>
+        <Button x:Name="Badger_btn" Content="More..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Badger_btn_Click" Margin="245,372,0,0"/>
+        <Button x:Name="Island_btn" Content="More..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Island_btn_Click" Margin="346,372,0,0" RenderTransformOrigin="0.196,0.68"/>
+        <Button x:Name="Mountain_btn" Content="More..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Mountain_btn_Click" Margin="448,372,0,0"/>
+        <Button x:Name="Negate_btn" Content="More..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Negate_btn_Click" Margin="547,372,0,0"/>
+        <Button x:Name="Sorin_btn" Content="More..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Click="Sorin_btn_Click" Margin="646,372,0,0" RenderTransformOrigin="0.516,0.823"/>
 
     </Grid>
 </Window>

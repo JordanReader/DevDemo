@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Hand_View" Height="337.653" Width="547.203">
     <Grid>
-        <Label x:Name="Hand_lbl" Content="Hand" HorizontalAlignment="Left" Margin="251,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.109,1.615"/>
+        <Label x:Name="Hand_lbl" Content="Hand" HorizontalAlignment="Left" Margin="221,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.109,1.615"/>
+        <Image x:Name="Template_img" HorizontalAlignment="Left" Height="253" VerticalAlignment="Top" Width="178" Margin="185,26,0,0"/>
 
     </Grid>
 </Window>
